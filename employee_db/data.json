@@ -1,0 +1,58 @@
+[
+  {
+    "firstName": "Souad",
+    "lastName": "Hamdi",
+    "email": "souadhamdi@example.com",
+    "salary": "9000",
+    "date": "2018-06-01"
+  },
+  {
+    "firstName": "Sarra",
+    "lastName": "Karoui",
+    "email": "sarrakaroui@example.com",
+    "salary": "5000",
+    "date": "2015-04-08"
+  },
+  {
+    "firstName": "Seif",
+    "lastName": "Ayari",
+    "email": "seifayari@example.com",
+    "salary": "7000",
+    "date": "2019-04-11"
+  },
+  {
+    "firstName": "mohammed",
+    "lastName": "Mahfoudhi",
+    "email": "mouhammedMahfoudhi@example.com",
+    "salary": "5000",
+    "date": "2009-10-11"
+  },
+  {
+    "firstName": "Aziz",
+    "lastName": "bousayala",
+    "email": "azizbousayala@example.com",
+    "salary": "8000",
+    "date": "2016-11-10"
+  },
+  {
+    "firstName": "ahmed",
+    "lastName": "ahmed",
+    "email": "ahmedahmed@example.com",
+    "salary": "5000",
+    "date": "2018-08-12"
+  },
+  {
+    "firstName": "imen",
+    "lastName": "zarrad",
+    "email": "imenzarrad@example.com",
+    "salary": "5000",
+    "date": "2019-06-01"
+  },
+  {
+    "firstName": "Mehdi",
+    "lastName": "nabli",
+    "email": "mehdinebli@example.com",
+    "salary": "5000",
+    "date": "2018-08-12"
+  }
+]
