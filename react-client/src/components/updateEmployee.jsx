@@ -20,13 +20,14 @@ handleOnChange (e){
     this.setState({
         salary:e.target.value,
         })
+        
 }
 render(){
     console.log(this.props.id)
     return(
         <span>
-         <textarea placeholder="add a new salary" onChange={this.handleOnChange}> </textarea>
-         <button onClick={()=>{this.updateEmployee(this.state.salary)}}>confirm</button>
+         <textarea placeholder="add a new salary" value={this.state.salary} onChange={this.handleOnChange}> </textarea>
+         <button onClick={()=>{this.updateEmployee(this.state.salary);this.setState({salary:""})}}>confirm</button>
          
          </span>
     )
