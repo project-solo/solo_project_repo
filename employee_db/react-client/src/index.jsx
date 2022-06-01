@@ -2,28 +2,36 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import axios from "axios"
-import Practice from './components/Practice.jsx';
-import PhraseList from './components/PhraseList.jsx';
+import CreateEmployee from './components/createEmployee.jsx';
+import EmployeesList from './components/EmployeesList.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      view: 'phrases',
-      data:[]
+      view: 'employee',
+      data:[],
+      changed:"NO"
     };
     this.deleteFunc=this.deleteFunc.bind(this)
+    this.getData=this.getData.bind(this)
   }
+
   componentDidMount(){
+    this.getData()
+  }
+    getData(){
     axios.get("/api/employee").then(res=>{
       this.setState({data:res.data})
       console.log(res.data)
     })
   }
+  
   deleteFunc(e){
     axios.delete(`/api/employee/${e.target.id}`).then((result)=>{
-        console.log(e.target.id)
+        this.setState({changed:"YES"})
     })
+    this.getData()
     }
   changeView(option) {
     this.setState({
@@ -36,24 +44,24 @@ class App extends React.Component {
       <div>
         <div className="nav" >
           <span className="logo">HR EMPLOYEES MANAGEMENT SYSTEM</span>
-          <span className={this.state.view === 'phrases'
+          <span className={this.state.view === 'employee'
             ? 'nav-selected'
             : 'nav-unselected'}
-          onClick={() => this.changeView('phrases')}>
-            Phrase List
+          onClick={() => this.changeView('employee')}>
+            Employees List
           </span>
           <span className={this.state.view === 'practice'
             ? 'nav-selected'
             : 'nav-unselected'}
           onClick={() => this.changeView('practice')}>
-            Practice
+            Create new employee
           </span>
         </div>
 
         <div className="main">
-          {this.state.view === 'phrases'
-            ? <PhraseList  data={this.state.data} deleteFunc={this.deleteFunc}/>
-            : <Practice />
+          {this.state.view === 'employee'
+            ? <EmployeesList  data={this.state.data} deleteFunc={this.deleteFunc} getData={ this.getData} changed={this.state.changed}/>
+            : <CreateEmployee />
           }
         </div>
       </div>

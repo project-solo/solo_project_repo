@@ -2,57 +2,65 @@
   {
     "firstName": "Souad",
     "lastName": "Hamdi",
-    "email": "souadhamdi@example.com",
+    "email": "souadhamdi@gmail.com",
     "salary": "9000",
+    "position":"developper",
     "date": "2018-06-01"
   },
   {
     "firstName": "Sarra",
     "lastName": "Karoui",
-    "email": "sarrakaroui@example.com",
+    "email": "sarrakaroui@gmail.com",
     "salary": "5000",
+    "position":"developper",
     "date": "2015-04-08"
   },
   {
     "firstName": "Seif",
     "lastName": "Ayari",
-    "email": "seifayari@example.com",
+    "email": "seifayari@gmail.com",
     "salary": "7000",
+    "position":"developper",
     "date": "2019-04-11"
   },
   {
     "firstName": "mohammed",
     "lastName": "Mahfoudhi",
-    "email": "mouhammedMahfoudhi@example.com",
+    "email": "mouhammedMahfoudhi@gmail.com",
     "salary": "5000",
+    "position":"developper",
     "date": "2009-10-11"
   },
   {
     "firstName": "Aziz",
     "lastName": "bousayala",
-    "email": "azizbousayala@example.com",
+    "email": "azizbousayala@gmail.com",
     "salary": "8000",
+    "position":"developper",
     "date": "2016-11-10"
   },
   {
     "firstName": "ahmed",
     "lastName": "ahmed",
-    "email": "ahmedahmed@example.com",
+    "email": "ahmedahmed@gmail.com",
     "salary": "5000",
+    "position":"developper",
     "date": "2018-08-12"
   },
   {
     "firstName": "imen",
     "lastName": "zarrad",
-    "email": "imenzarrad@example.com",
+    "email": "imenzarrad@gmail.com",
     "salary": "5000",
+    "position":"developper",
     "date": "2019-06-01"
   },
   {
     "firstName": "Mehdi",
     "lastName": "nabli",
-    "email": "mehdinebli@example.com",
+    "email": "mehdinebli@gmail.com",
     "salary": "5000",
+    "position":"developper",
     "date": "2018-08-12"
   }
 ]

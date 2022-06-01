@@ -52,12 +52,12 @@ app.put('/api/employee/:employee_id', function(req, res) {
 	// create mongose method to update a existing record into collection
 	let id = req.params.employee_id;
 	var data = {
-		firstName : req.body.firstName,
-		lastName:req.body.lastName,
-		email:req.body.email,
-		position:req.body.position,
+		// firstName : req.body.firstName,
+		// lastName:req.body.lastName,
+		// email:req.body.email,
 		salary : req.body.salary,
-		date : req.body.date
+		// position:req.body.position,
+		// date : req.body.date
 	}
 	// save the user
 	Employee.findByIdAndUpdate(id, data, function(err, employee) {

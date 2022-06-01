@@ -12,7 +12,7 @@ button {
   border: none;
   border-radius: 3px;
   color: #F3F3F3;
-  background-color: #1627c0;
+  background-color: #e49144;
   margin-right: 5px;
   padding: 10px;
   font-size: 1em;
@@ -49,28 +49,29 @@ button {
 .logo {
   font-size: 1.9em;
   margin-right: auto;
-  margin-left: 10px;
-  color: #f3f3f3;
+  margin-left: 30px;
+  color: #ccd2e5;
+  font-weight: bold;
 }
 .main {
   margin: 20px;
 }
 
 .nav {
-  background-color: #e6a140;
+  background-color: #5fac1f;
   margin: 15px;
   padding: 30px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: #F3F3F3;
+  color: #120707;
 }
 
 .nav-selected {
-  padding: 5px;
-  color: white;
+  padding: 10px;
+  color: rgb(13, 6, 6);
   font-weight: bold;
-  margin-right: 5px;
+  margin-right: 100px;
   font-size: 1.1em;
 }
 
@@ -78,52 +79,53 @@ button {
   padding: 5px;
   margin-right: 5px;
   font-size: 1.1em;
+  font-weight: bold;
 }
 
 
-.phrases {
+.employee {
   margin: 20px;
 }
 
-.phrase-table {
+.employee-table {
   display: flex;
   flex-flow: column nowrap;
   margin: 0.5rem;
-  line-height: 1.5;
+  line-height: 2;
   flex: 1 1 auto;
-  border: 1px solid #d0d0d0;
+  border: 1px solid #137b6f;
 }
 
-.phrase-header {
+.employee-header {
   display: none;
   font-weight: 700;
   font-size: 1.1em;
   background-color: #f2f2f2;
 }
 
-.phrase-header > .phrase-data {
+.employee-header > .employee-data {
   white-space: normal;
 }
 
-.phrase-row {
+.employee-row {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
 }
 
-.phrase-row:nth-of-type(even) {
+.employee-row:nth-of-type(even) {
   background-color: #f2f2f2;
 }
 
-.phrase-row:nth-of-type(odd) {
+.employee-row:nth-of-type(odd) {
   background-color: #ffffff;
 }
 
-.phrase-row:hover {
+.employee-row:hover {
   color: #C0163A;
 }
 
-.phrase-data {
+.employee-data {
   display: flex;
   flex-flow: row nowrap;
   flex-grow: 1;
@@ -134,5 +136,128 @@ button {
   text-overflow: ellipsis;
   min-width: 0px;
   white-space: nowrap;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #441804;
+}
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+.contain-table {
+  overflow-x: auto;
+}
+.container,
+.small-container,
+.medium-container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small-container {
+  max-width: 800px;
+}
+label {
+  font-weight: 600;
+  max-width: 100%;
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='position'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='url'],
+[type='week'],
+[type='time'],
+select,
+textarea {
+  display: block;
+  border: 1px solid #b8c83e;
+  border-radius: 4px;
+  padding: 0.75rem;
+  outline: none;
+  background: transparent;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1;
+}
+
+[type='color']:hover,
+[type='date']:hover,
+[type='datetime']:hover,
+[type='datetime-local']:hover,
+[type='email']:hover,
+[type='month']:hover,
+[type='number']:hover,
+[type='password']:hover,
+[type='search']:hover,
+[type='tel']:hover,
+[type='text']:hover,
+[type='url']:hover,
+[type='week']:hover,
+[type='time']:hover,
+select:hover,
+textarea:hover {
+  border: 1px solid #d4b3b3;
+}
+
+[type='color']:focus,
+[type='color']:active,
+[type='date']:focus,
+[type='date']:active,
+[type='datetime']:focus,
+[type='datetime']:active,
+[type='datetime-local']:focus,
+[type='datetime-local']:active,
+[type='email']:focus,
+[type='email']:active,
+[type='month']:focus,
+[type='month']:active,
+[type='number']:focus,
+[type='number']:active,
+[type='password']:focus,
+[type='password']:active,
+[type='search']:focus,
+[type='search']:active,
+[type='tel']:focus,
+[type='tel']:active,
+[type='text']:focus,
+[type='text']:active,
+[type='url']:focus,
+[type='url']:active,
+[type='week']:focus,
+[type='week']:active,
+[type='time']:focus,
+[type='time']:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active {
+  border: 1px solid #0366ee;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #0e3b79;
+}
+
+textarea {
+  overflow: auto;
+  height: auto;
 }
