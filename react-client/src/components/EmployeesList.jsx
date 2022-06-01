@@ -30,7 +30,7 @@ render() {
             <div className="employee-data">LastName</div>
             <div className="employee-data">Email</div>
             <div className="employee-data">Position</div>
-            <div className="employee-data">Salary</div>
+            <div className="employee-data">Salary(€)</div>
             <div className="employee-data">Date</div>
           </div>
           { this.props.data.map((e,i)=>{
