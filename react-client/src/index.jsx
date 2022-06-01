@@ -43,7 +43,8 @@ class App extends React.Component {
     return (
       <div>
         <div className="nav" >
-          <span className="logo">HR EMPLOYEES MANAGEMENT SYSTEM</span>
+          <span className="logo">OPERARIOS: Management system</span>
+          
           <span className={this.state.view === 'employee'
             ? 'nav-selected'
             : 'nav-unselected'}
