@@ -27,11 +27,11 @@ render() {
         <div className="employee-table">
           <div className="employee-header employee-row">
             <div className="employee-data">firstName</div>
-            <div className="employee-data">lastName</div>
-            <div className="employee-data">email</div>
-            <div className="employee-data">position</div>
-            <div className="employee-data">salary</div>
-            <div className="employee-data">date</div>
+            <div className="employee-data">LastName</div>
+            <div className="employee-data">Email</div>
+            <div className="employee-data">Position</div>
+            <div className="employee-data">Salary</div>
+            <div className="employee-data">Date</div>
           </div>
           { this.props.data.map((e,i)=>{
             console.log(e._id)

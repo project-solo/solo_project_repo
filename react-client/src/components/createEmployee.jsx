@@ -57,7 +57,7 @@ class CreateEmployee extends React.Component{
                 name="salary"
                 onChange={(e)=>{this.setState({salary:e.target.value})}}
             />
-            <label htmlFor="position">position</label>
+            <label htmlFor="position">Position</label>
             <input
                 id="position"
                 type="position"

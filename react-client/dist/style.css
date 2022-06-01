@@ -12,7 +12,7 @@ button {
   border: none;
   border-radius: 3px;
   color: #F3F3F3;
-  background-color: #e49144;
+  background-color: #1180ca;
   margin-right: 5px;
   padding: 10px;
   font-size: 1em;
@@ -50,7 +50,7 @@ button {
   font-size: 1.9em;
   margin-right: auto;
   margin-left: 30px;
-  color: #ccd2e5;
+  color: #060737;
   font-weight: bold;
 }
 .main {
@@ -58,7 +58,7 @@ button {
 }
 
 .nav {
-  background-color: #5fac1f;
+  background-color: #63e443;
   margin: 15px;
   padding: 30px;
   display: flex;
@@ -93,7 +93,7 @@ button {
   margin: 0.5rem;
   line-height: 2;
   flex: 1 1 auto;
-  border: 1px solid #137b6f;
+  border: 1px solid #e553db;
 }
 
 .employee-header {
@@ -136,7 +136,7 @@ button {
   text-overflow: ellipsis;
   min-width: 0px;
   white-space: nowrap;
-  border-bottom: 1px solid #441804;
+  border-bottom: 1px solid #62ed33;
 }
 input,
 optgroup,
